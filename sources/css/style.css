@@ -65,6 +65,10 @@ body {
   padding: 0; }
 
 /* line 28, /home/jtrepichio/webDev/stormy-webpage/sources/scss/style.scss */
+html, body {
+  min-height: 100%; }
+
+/* line 30, /home/jtrepichio/webDev/stormy-webpage/sources/scss/style.scss */
 header {
   letter-spacing: 1.5px;
   font-size: 5rem;
@@ -72,12 +76,12 @@ header {
   padding: 2rem;
   margin: 0; }
   @media screen and (max-width: 700px) {
-    /* line 28, /home/jtrepichio/webDev/stormy-webpage/sources/scss/style.scss */
+    /* line 30, /home/jtrepichio/webDev/stormy-webpage/sources/scss/style.scss */
     header {
       font-size: 3rem;
       text-align: center; } }
 
-/* line 41, /home/jtrepichio/webDev/stormy-webpage/sources/scss/style.scss */
+/* line 43, /home/jtrepichio/webDev/stormy-webpage/sources/scss/style.scss */
 nav {
   margin: 0;
   padding: 0;
@@ -86,49 +90,49 @@ nav {
   top: 25px;
   right: 25px; }
   @media screen and (max-width: 700px) {
-    /* line 41, /home/jtrepichio/webDev/stormy-webpage/sources/scss/style.scss */
+    /* line 43, /home/jtrepichio/webDev/stormy-webpage/sources/scss/style.scss */
     nav {
       position: relative;
       top: 0;
       right: 0;
       background-color: rgba(0, 0, 0, 0.5); } }
   @media screen and (max-width: 700px) {
-    /* line 54, /home/jtrepichio/webDev/stormy-webpage/sources/scss/style.scss */
+    /* line 56, /home/jtrepichio/webDev/stormy-webpage/sources/scss/style.scss */
     nav ul {
       margin: 0;
       padding: 0; } }
-  /* line 60, /home/jtrepichio/webDev/stormy-webpage/sources/scss/style.scss */
+  /* line 62, /home/jtrepichio/webDev/stormy-webpage/sources/scss/style.scss */
   nav ul li {
     display: inline-block;
     margin: 0 15px; }
     @media screen and (max-width: 700px) {
-      /* line 60, /home/jtrepichio/webDev/stormy-webpage/sources/scss/style.scss */
+      /* line 62, /home/jtrepichio/webDev/stormy-webpage/sources/scss/style.scss */
       nav ul li {
         display: block;
         width: 100%;
         margin: 0;
         text-align: center;
         padding: 2rem; }
-        /* line 72, /home/jtrepichio/webDev/stormy-webpage/sources/scss/style.scss */
+        /* line 74, /home/jtrepichio/webDev/stormy-webpage/sources/scss/style.scss */
         nav ul li:not(:last-child) {
           border-bottom: 1px solid rgba(255, 255, 255, 0.2); } }
     @media screen and (max-width: 500px) {
-      /* line 60, /home/jtrepichio/webDev/stormy-webpage/sources/scss/style.scss */
+      /* line 62, /home/jtrepichio/webDev/stormy-webpage/sources/scss/style.scss */
       nav ul li {
         padding: 2.5rem; } }
-    /* line 82, /home/jtrepichio/webDev/stormy-webpage/sources/scss/style.scss */
+    /* line 84, /home/jtrepichio/webDev/stormy-webpage/sources/scss/style.scss */
     nav ul li:hover a {
       color: white;
       border-bottom: 1px solid currentcolor; }
       @media screen and (max-width: 700px) {
-        /* line 82, /home/jtrepichio/webDev/stormy-webpage/sources/scss/style.scss */
+        /* line 84, /home/jtrepichio/webDev/stormy-webpage/sources/scss/style.scss */
         nav ul li:hover a {
           border-bottom: 0; } }
     @media screen and (max-width: 700px) {
-      /* line 81, /home/jtrepichio/webDev/stormy-webpage/sources/scss/style.scss */
+      /* line 83, /home/jtrepichio/webDev/stormy-webpage/sources/scss/style.scss */
       nav ul li:hover {
         background-color: #000; } }
-    /* line 94, /home/jtrepichio/webDev/stormy-webpage/sources/scss/style.scss */
+    /* line 96, /home/jtrepichio/webDev/stormy-webpage/sources/scss/style.scss */
     nav ul li a {
       text-decoration: none;
       color: inherit;
@@ -136,21 +140,21 @@ nav {
       color: #ccc;
       padding: 1.5rem; }
       @media screen and (max-width: 700px) {
-        /* line 94, /home/jtrepichio/webDev/stormy-webpage/sources/scss/style.scss */
+        /* line 96, /home/jtrepichio/webDev/stormy-webpage/sources/scss/style.scss */
         nav ul li a {
           display: block;
           width: 100%; } }
       @media screen and (max-width: 500px) {
-        /* line 94, /home/jtrepichio/webDev/stormy-webpage/sources/scss/style.scss */
+        /* line 96, /home/jtrepichio/webDev/stormy-webpage/sources/scss/style.scss */
         nav ul li a {
           font-size: 64px; } }
 
-/* line 113, /home/jtrepichio/webDev/stormy-webpage/sources/scss/style.scss */
+/* line 115, /home/jtrepichio/webDev/stormy-webpage/sources/scss/style.scss */
 main {
   width: 100%;
   height: 49vh;
   position: relative; }
-  /* line 118, /home/jtrepichio/webDev/stormy-webpage/sources/scss/style.scss */
+  /* line 120, /home/jtrepichio/webDev/stormy-webpage/sources/scss/style.scss */
   main div#poem-container {
     position: absolute;
     top: 10%;
@@ -163,7 +167,7 @@ main {
     line-height: 1.5;
     background-color: rgba(0, 0, 0, 0.6); }
     @media screen and (max-width: 700px) {
-      /* line 118, /home/jtrepichio/webDev/stormy-webpage/sources/scss/style.scss */
+      /* line 120, /home/jtrepichio/webDev/stormy-webpage/sources/scss/style.scss */
       main div#poem-container {
         position: relative;
         width: 50%;
@@ -172,13 +176,13 @@ main {
         margin: 5% auto;
         font-size: 3.8vw; } }
     @media screen and (max-width: 500px) {
-      /* line 118, /home/jtrepichio/webDev/stormy-webpage/sources/scss/style.scss */
+      /* line 120, /home/jtrepichio/webDev/stormy-webpage/sources/scss/style.scss */
       main div#poem-container {
         margin: 0 auto;
         width: 80%;
         font-size: 4.3vw; } }
 
-/* line 145, /home/jtrepichio/webDev/stormy-webpage/sources/scss/style.scss */
+/* line 147, /home/jtrepichio/webDev/stormy-webpage/sources/scss/style.scss */
 .selected {
   color: #fff;
   font-weight: bolder; }
