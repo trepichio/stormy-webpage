@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css?family=Oxygen');
+@import 'helper/partials/IcoMoonFont';
+@import 'helper/partials/variables';
+
+html {
+	box-sizing: border-box;
+	font-size: 62.5%;
+	margin: 0;
+	padding: 0;
+}
+
+*, *::before, *::after {
+	box-sizing: inherit;
+}
+
+body {
+	font-size: 1.6rem;
+	font-family: 'Oxygen', sans-serif;
+	background-image: url('../../assets/images/stormy-weather-background.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: #000;
+	color: #fff;
+	margin: 0;
+	padding: 0;
+} 
+
+header {
+	letter-spacing: 1.5px;
+	font-size: 5rem;
+	background-color: $backcolor;
+	padding: 2rem;
+	margin: 0;
+
+	@media screen and (max-width: 700px) {
+		font-size: 3rem;
+		text-align: center;
+	}
+}
+
+nav {
+	margin: 0; padding: 0;
+	list-style: none;
+	position: absolute;
+	top: 25px;
+	right: 25px;
+	
+	@media screen and (max-width: 700px) {
+		position: relative;
+		top: 0; right: 0;
+		background-color: $backcolor;
+	}
+
+	ul {
+
+		@media screen and (max-width: 700px) {
+			margin: 0; padding: 0;
+		}
+
+		li {
+			display: inline-block;		
+			margin: 0 15px;
+
+
+			@media screen and (max-width: 700px) {
+				display: block;
+				width: 100%;
+				margin: 0;
+				text-align: center;
+				padding: 2rem;
+
+				&:not(:last-child) {
+					border-bottom: 1px solid hsla(0,0%,100%,0.2);
+				}
+			}
+
+			@media screen and (max-width: 500px) {
+				padding: 2.5rem;
+			}
+
+			&:hover {
+				a {
+					color: lighten($linkcolor, 100%);
+					border-bottom: 1px solid currentcolor;
+					@media screen and (max-width: 700px) {border-bottom: 0;}
+				}
+
+				@media screen and (max-width: 700px) {
+					
+					background-color: #000;
+				}
+			}
+	
+			a {
+				text-decoration: none;
+				color: inherit;
+				font-size: 32px;
+				color: $linkcolor;
+				padding: 1.5rem;
+				@media screen and (max-width: 700px) {
+					display: block;
+					width: 100%;
+				}
+				@media screen and (max-width: 500px) {
+					font-size: 64px;
+				}
+
+			}
+		}
+	}
+}
+
+main {
+	width: 100%;
+	height: 49vh;
+	position: relative;
+
+	div#poem-container {
+		position: absolute;
+		top: 10%; left: 10%;
+		border: 6px double #fff;
+		width: 30vw;
+		padding: 1vw 3vw;
+		font-size: 2.1vw;
+		text-shadow: 3px 3px 1px #000;
+		line-height: 1.5;
+		background-color: rgba(0,0,0,0.6);
+
+		@media screen and (max-width: 700px) {
+			position: relative;
+			width: 50%;
+			top: 0;left: 0;
+			margin: 5% auto;
+			font-size: 3.8vw;
+		}
+
+		@media screen and (max-width: 500px) {
+			margin: 0 auto;
+			width: 80%;
+			font-size: 4.3vw;
+		}
+	}
+}
+
+.selected {
+	color: $selected;
+	font-weight: bolder;
+}
